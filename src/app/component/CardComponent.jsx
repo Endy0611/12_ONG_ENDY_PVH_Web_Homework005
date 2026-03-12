@@ -37,8 +37,7 @@ function Item({ item, onToggle }) {
           <button onClick={() => onToggle(item.id)}>
             <Bookmark
               size={18}
-              fill={item.saved ? "#facc15" : "none"}
-              color={item.saved ? "#facc15" : "#6b7280"}
+               className={item.saved ? "fill-yellow-400 text-white" : "fill-none text-gray-500"}
             />
           </button>
         </div>
